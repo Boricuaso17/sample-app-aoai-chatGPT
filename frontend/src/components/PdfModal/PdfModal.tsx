@@ -14,7 +14,6 @@ const modalStyle: Styles = {
   content: {
     display: 'flex',
     flexDirection: 'column' as const,
-    // maxWidth: '740px',
     minWidth: '40%',
     minHeight: '40%',
     width: '70%',
