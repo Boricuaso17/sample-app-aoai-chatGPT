@@ -54,7 +54,7 @@ async def process(data: list, file):
           question = qa_pair["question"]
           messages = [{"role":"user", "content":question}]
 
-          print("processing question "+question)
+          print("processing question " + question)
 
           request = {"messages":messages, "id":"1"}
 

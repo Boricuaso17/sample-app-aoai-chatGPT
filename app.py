@@ -44,7 +44,9 @@ def create_app():
     app.config["TEMPLATES_AUTO_RELOAD"] = True
     return app
 
+# Endpoins
 
+# Home Page Route 
 @bp.route("/")
 async def index():
     return await render_template(
@@ -53,6 +55,7 @@ async def index():
         favicon=app_settings.ui.favicon
     )
 
+# Route to extract pdf files from blob storage
 @bp.route("/filenames_cdn_urls", methods=["GET"])
 async def get_filenames_urls():
     try:

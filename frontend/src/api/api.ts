@@ -354,6 +354,7 @@ export const historyMessageFeedback = async (messageId: string, feedback: string
   return response
 }
 
+// This function makes a GET request to the endpoint @bp.route("/filenames_cdn_urls", methods=["GET"]) and retries the response in JSON format.
 export const pdfList = async (): Promise<Response | null> => {
   const response = await fetch('/filenames_cdn_urls', {
     method: 'GET'

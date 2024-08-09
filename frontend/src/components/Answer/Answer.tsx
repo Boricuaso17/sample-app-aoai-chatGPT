@@ -86,6 +86,9 @@ export const Answer = ({ answer, onCitationClicked, onExectResultClicked }: Prop
     return citationFilename
   }
 
+  // This code higlights the citation content in de PDF.
+  const higlightPDFContent
+
   const onLikeResponseClicked = async () => {
     if (answer.message_id == undefined) return
 

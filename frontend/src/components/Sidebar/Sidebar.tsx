@@ -30,6 +30,7 @@ const SidebarMenu: FC<SidebarMenuProps> = ({
     setShowPdfModal(!showPdfModal)
   }
 
+  //Calls the pdfList function to start fetching data and store it in pdfListJson obj.
   useEffect(() => {
     setLoading(true)
     const getPdfList = async () => {

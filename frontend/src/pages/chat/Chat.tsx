@@ -961,6 +961,8 @@ const Chat = () => {
                 <span aria-label="Citations" className={styles.citationPanelHeader}>
                   Citations
                 </span>
+
+                {/* X button to close Citations Panel */}
                 <IconButton
                 styles={{
                   icon: {
@@ -981,6 +983,8 @@ const Chat = () => {
                   onClick={() => setIsCitationPanelOpen(false)}
                 />
               </Stack>
+
+              {/* Citations panel title */}
               <h5
                 className={styles.citationPanelTitle}
                 tabIndex={0}
@@ -992,6 +996,7 @@ const Chat = () => {
                 onClick={() => onViewSource(activeCitation)}>
                 {activeCitation.title}
               </h5>
+
               <div tabIndex={0}>
                 <ReactMarkdown
                   linkTarget="_blank"
@@ -1014,6 +1019,8 @@ const Chat = () => {
                 <span aria-label="Intents" className={styles.citationPanelHeader}>
                   Intents
                 </span>
+
+                
                 <IconButton
                   iconProps={{ iconName: 'Cancel' }}
                   aria-label="Close intents panel"
